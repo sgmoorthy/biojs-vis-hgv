@@ -12,7 +12,6 @@ Install the module with: `npm install hgv`
 
 ```javascript
 var hgv = require('hgv');
-hgv.hello("biojs"); // "hello biojs"
 ```
 
 ## Documentation
