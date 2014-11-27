@@ -1,9 +1,7 @@
 # hgv
 
-[![NPM version](http://img.shields.io/npm/v/hgv.svg)](https://www.npmjs.org/package/hgv)
-[![Build Status](https://secure.travis-ci.org/saketkc/hgv.png?branch=master)](http://travis-ci.org/saketkc/hgv)
-[![Coverage Status](https://img.shields.io/coveralls/saketkc/hgv.svg)](https://coveralls.io/r/saketkc/hgv)
-[![NPM version](https://badge-me.herokuapp.com/api/npm/hgv.png)](http://badges.enytc.com/for/npm/hgv) 
+[![NPM version](http://img.shields.io/npm/v/biojs-vis-hgv.svg)](https://www.npmjs.org/package/biojs-vis-hgv)
+[![Build Status](https://secure.travis-ci.org/saketkc/biojs-vis-hgv.png?branch=master)](http://travis-ci.org/saketkc/biojs-vis-hgv)
 
 > A BioJS component for human genetic variation viewer(protein variants).
 
