@@ -1,18 +1,18 @@
 {
   "name": "biojs-vis-hgv",
   "description": "A BioJS component for human genetic variation viewer(protein variants).",
-  "version": "0.1.0",
-  "homepage": "https://github.com/saketkc/hgv",
+  "version": "0.1.1",
+  "homepage": "https://github.com/saketkc/hgv2",
   "author": {
     "name": "Saket Choudhary",
     "email": "saketkc@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/saketkc/hgv.git"
+    "url": "git://github.com/saketkc/hgv2.git"
   },
   "bugs": {
-    "url": "https://github.com/saketkc/hgv/issues"
+    "url": "https://github.com/saketkc/hgv2/issues"
   },
   "licenses": [
     {
@@ -77,11 +77,11 @@
   },
   "keywords": [
     "biojs",
-    " bioinformatics",
-    " visualization",
-    " variants",
-    " genes",
-    " proteins",
+    "bioinformatics",
+    "visualization",
+    "variants",
+    "genes",
+    "proteins",
     "biojs"
   ]
 }
