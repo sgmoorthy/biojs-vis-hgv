@@ -1,12 +1,11 @@
 # hgv
 
 [![NPM version](http://img.shields.io/npm/v/biojs-vis-hgv.svg)](https://www.npmjs.org/package/biojs-vis-hgv)
-[![Build Status](https://secure.travis-ci.org/saketkc/biojs-vis-hgv.png?branch=master)](http://travis-ci.org/saketkc/biojs-vis-hgv)
 
 > A BioJS component for human genetic variation viewer(protein variants).
 
 ## Getting Started
-Install the module with: `npm install hgv`
+Install the module with: `npm install biojs-vis-hgv`
 
 ```javascript
 var hgv = require('biojs-vis-hgv');
@@ -30,10 +29,10 @@ hgv.hello('biojs'); // "hello biojs"
 
 ## Contributing
 
-Please submit all issues and pull requests to the [saketkc/hgv](http://github.com/saketkc/hgv) repository!
+Please submit all issues and pull requests to the [saketkc/hgv](http://github.com/saketkc/hgv2) repository!
 
 ## Support
-If you have any problem or suggestion please open an issue [here](https://github.com/saketkc/hgv/issues).
+If you have any problem or suggestion please open an issue [here](https://github.com/saketkc/hgv2/issues).
 
 
 ## License 
