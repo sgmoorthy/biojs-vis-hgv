@@ -1,12 +1,3 @@
-/*
- * hgv
- * https://github.com/saketkc/hgv
- *
- * Copyright (c) 2014 Saket Choudhary
- * Licensed under the MIT license.
- */
-
-
 // browserify build config
 var buildDir = "build";
 var outputFile = "hgv";
@@ -19,13 +10,12 @@ var browserify = require('browserify');
 var watchify = require('watchify')
 var uglify = require('gulp-uglify');
 
+
 // testing
-var mocha = require('gulp-mocha');
+var mocha = require('gulp-mocha'); 
 
-var mochaPhantomJS = require('gulp-mocha-phantomjs'); 
 
-// code style
-var jshint = require('gulp-jshint'); 
+// code style 
 
 // gulp helper
 var source = require('vinyl-source-stream'); // converts node streams into vinyl streams
@@ -48,43 +38,21 @@ var packageConfig = require('./package.json');
 
 // a failing test breaks the whole build chain
 gulp.task('build', ['build-browser', 'build-browser-gzip']);
-gulp.task('default', ['lint', 'test',  'build']);
+gulp.task('default', ['build']);
 
 
-gulp.task('lint', function() {
-  return gulp.src('./lib/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
-});
 
 
-gulp.task('test', ['test-unit', 'test-dom']);
+
+
+gulp.task('test', ['test-unit']);
 
 
 gulp.task('test-unit', function () {
     return gulp.src('./test/unit/**/*.js', {read: false})
         .pipe(mocha({reporter: 'spec',
-                    useColors: false}));
+                    useColors: true}));
 });
-
-
-gulp.task('test-dom', ["build-test"], function () {
-  return gulp
-  .src('test/index.html')
-  .pipe(mochaPhantomJS());
-});
-
-// browserify debug
-gulp.task('build-test',['init'], function() {
-  var b = browserify({debug: true});
-  b.add('./test/dom/index');
-  return b.bundle()
-    .pipe(source("test.js"))
-    .pipe(chmod(644))
-    .pipe(gulp.dest(buildDir));
-});
-
-
 
 
 
@@ -93,6 +61,9 @@ gulp.task('test-watch', function() {
      gulp.run('test');
    });
 });
+
+
+
 
 
 // will remove everything in build
@@ -119,7 +90,7 @@ gulp.task('build-browser',['init'], function() {
 
 // browserify min
 gulp.task('build-browser-min',['init'], function() {
-  var b = browserify({hasExports: true, standalone: "hgv"});
+  var b = browserify({hasExports: true, standalone: "biojs-vis-blast"});
   exposeBundles(b);
   return b.bundle()
     .pipe(source(outputFile + ".min.js"))
@@ -138,7 +109,7 @@ gulp.task('build-browser-gzip', ['build-browser-min'], function() {
 // exposes the main package
 // + checks the config whether it should expose other packages
 function exposeBundles(b){
-  b.add('./index.js', {expose: packageConfig.name });
+  b.add(packageConfig.main, {expose: packageConfig.name });
   if(packageConfig.sniper !== undefined && packageConfig.sniper.exposed !== undefined){
     for(var i=0; i<packageConfig.sniper.exposed.length; i++){
       b.require(packageConfig.sniper.exposed[i]);
@@ -152,7 +123,9 @@ gulp.task('watch', function() {
   var util = require('gulp-util')
 
   var b = browserify({debug: true,hasExports: true, cache: {}, packageCache: {} });
-  b.add('./index.js', {expose: packageConfig.name});
+  b.add(packageConfig.main, {expose: packageConfig.name});
+  // expose other bundles
+  exposeBundles(b);
 
   function rebundle(ids){
     b.bundle()
