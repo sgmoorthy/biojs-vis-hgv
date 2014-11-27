@@ -5,3 +5,6 @@ var hgvViewer = new app({
                     baseUrl: "../data/",
                     target: yourDiv
                     });
+
+// BioJS event system test (you can safely remove this in your app)
+//instance=hgvViewer
