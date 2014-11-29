@@ -4,6 +4,11 @@
 
 > A BioJS component for human genetic variation viewer(protein variants).
 
+## Demo
+
+http://registry.biojs.net/client/#/detail/biojs-vis-hgv
+
+
 ## Getting Started
 Install the module with: `npm install biojs-vis-hgv`
 
