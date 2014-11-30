@@ -5,10 +5,10 @@
   "homepage": "https://github.com/saketkc/hgv2",
   "contributors":[
     {"name":"Leyla Garcia",
-     "email": "ljgarcia@ebi.ac.uk",
+     "email": "ljgarcia@ebi.ac.uk"
     },
     {"name":"Andrew Nightingale",
-     "email": "anight@ebi.ac.uk",
+     "email": "anight@ebi.ac.uk"
     }
   ],
   "author": {
