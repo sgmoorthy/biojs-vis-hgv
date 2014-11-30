@@ -3,6 +3,14 @@
   "description": "A BioJS component for human genetic variation viewer(protein variants).",
   "version": "0.1.1",
   "homepage": "https://github.com/saketkc/hgv2",
+  "contributors":[
+    {"name":"Leyla Garcia",
+     "email": "ljgarcia@ebi.ac.uk",
+    },
+    {"name":"Andrew Nightingale",
+     "email": "anight@ebi.ac.uk",
+    }
+  ],
   "author": {
     "name": "Saket Choudhary",
     "email": "saketkc@gmail.com"
