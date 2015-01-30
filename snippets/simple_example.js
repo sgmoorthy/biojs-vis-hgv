@@ -7,4 +7,4 @@ var hgvViewer = new app({
                     });
 
 // BioJS event system test (you can safely remove this in your app)
-//instance=hgvViewer
+//@biojs-instance=hgvViewer
