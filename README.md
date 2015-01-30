@@ -6,7 +6,7 @@
 
 ## Demo
 
-http://registry.biojs.net/client/#/detail/biojs-vis-hgv
+http://biojs.io/d/biojs-vis-hgv
 
 
 ## Getting Started
