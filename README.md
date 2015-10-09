@@ -8,6 +8,8 @@
 
 http://biojs.io/d/biojs-vis-hgv
 
+# Ported from
+ https://github.com/saketkc/biojs-genetic-variation-viewer
 
 ## Getting Started
 Install the module with: `npm install biojs-vis-hgv`
