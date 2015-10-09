@@ -1,7 +1,7 @@
 {
   "name": "biojs-vis-hgv",
   "description": "A BioJS component for human genetic variation viewer(protein variants).",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://github.com/saketkc/hgv2",
   "contributors":[
     {"name":"Leyla Garcia",
@@ -81,7 +81,8 @@
       "snippets"
     ],
     "css": ["/css/style.css"],
-    "first": "simple_example"
+    "first": "simple_example",
+    "second": "P00533"
   },
   "keywords": [
     "biojs",
