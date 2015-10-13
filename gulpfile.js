@@ -8,7 +8,6 @@ var gulp   = require('gulp');
 // browser builds
 var browserify = require('browserify');
 var watchify = require('watchify');
-var mocaphantomjs = require('moca-phantomjs');
 var uglify = require('gulp-uglify');
 
 
