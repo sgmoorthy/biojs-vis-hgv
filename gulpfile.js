@@ -7,15 +7,17 @@ var gulp   = require('gulp');
 
 // browser builds
 var browserify = require('browserify');
-var watchify = require('watchify')
+var watchify = require('watchify');
+var phantomjs = require('phantomjs');
+var mocaphantomjs = require('moca-phantomjs');
 var uglify = require('gulp-uglify');
 
 
 // testing
-var mocha = require('gulp-mocha'); 
+var mocha = require('gulp-mocha');
 
 
-// code style 
+// code style
 
 // gulp helper
 var source = require('vinyl-source-stream'); // converts node streams into vinyl streams
@@ -98,7 +100,7 @@ gulp.task('build-browser-min',['init'], function() {
     .pipe(streamify(uglify()))
     .pipe(gulp.dest(buildDir));
 });
- 
+
 gulp.task('build-browser-gzip', ['build-browser-min'], function() {
   return gulp.src(outputFileMin)
     .pipe(gzip({append: false, gzipOptions: { level: 9 }}))
@@ -117,7 +119,7 @@ function exposeBundles(b){
   }
 }
 
-// watch task for browserify 
+// watch task for browserify
 // watchify has an internal cache -> subsequent builds are faster
 gulp.task('watch', function() {
   var util = require('gulp-util')
