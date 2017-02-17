@@ -8,6 +8,12 @@
 
 http://biojs.io/d/biojs-vis-hgv
 
+# Cite
+
+```
+Choudhary, S., Garcia, L., Nightingale, A., & Martin, M. J. (2015). BioJS-HGV Viewer: Genetic Variation Visualizer. bioRxiv, 032573. [pdf](http://www.biorxiv.org/content/biorxiv/early/2015/11/23/032573.full.pdf)
+```
+
 # Ported from
  https://github.com/saketkc/biojs-genetic-variation-viewer
 
