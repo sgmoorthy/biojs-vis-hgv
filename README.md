@@ -10,7 +10,9 @@ http://biojs.io/d/biojs-vis-hgv
 
 # Cite
 
-`Choudhary, S., Garcia, L., Nightingale, A., & Martin, M. J. (2015). BioJS-HGV Viewer: Genetic Variation Visualizer. bioRxiv, 032573.` [pdf](http://www.biorxiv.org/content/biorxiv/early/2015/11/23/032573.full.pdf)
+```Choudhary, S., Garcia, L., Nightingale, A., & Martin, M. J. (2015). BioJS-HGV Viewer: Genetic Variation Visualizer. bioRxiv, 032573.``` 
+
+[pdf](http://www.biorxiv.org/content/biorxiv/early/2015/11/23/032573.full.pdf)
 
 
 # Ported from
@@ -90,7 +92,3 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/saketkc/hgv2/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
